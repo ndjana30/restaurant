@@ -1,0 +1,5 @@
+com\davy\restaurant\repositories\CategoryRepo.class
+com\davy\restaurant\controllers\CategoryController.class
+com\davy\restaurant\models\Category.class
+com\davy\restaurant\services\CategoryServices.class
+com\davy\restaurant\RestaurantApplication.class
