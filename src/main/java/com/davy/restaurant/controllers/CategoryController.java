@@ -25,9 +25,7 @@ public class CategoryController {
         return cs.getAllCategories();
     }
     @PostMapping("add")
-    public String addCategory(@RequestBody Category category,@RequestParam("image") MultipartFile File)  throws IOException, SQLException {
-        Blob blob = new SerialBlob(File.getBytes());
-        category.setImage(blob);
+    public String addCategory(@RequestBody Category category)  throws IOException, SQLException {
 
         return cs.AddCategory(category);
     }

@@ -14,24 +14,16 @@ public class Category {
     @GeneratedValue
     private long id;
     private String name;
-    private Blob image;
 
-    public Blob getImage() {
-        return image;
-    }
-
-    public void setImage(Blob image) {
-        this.image = image;
-    }
 
     public Category() {
     }
 
 
-    public Category(long id, String name, Blob image) {
+    public Category(long id, String name) {
         this.id = id;
         this.name = name;
-        this.image = image;
+
     }
 
     public long getId() {
